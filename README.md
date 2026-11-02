@@ -72,7 +72,7 @@ workflows require them. Pstack playbooks bring their complete supporting princip
 Install the complete personal collection, including its dependencies:
 
 ```sh
-npx skills add . --global --agent codex --all --yes
+npx skills add . --global --agent codex --skill '*' --yes
 ```
 
 This installs all 96 skills, including the complete existing brain suite. For a selective installation,
