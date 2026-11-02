@@ -1,0 +1,317 @@
+{
+  "generated_metadata": {
+    "skills/automate-me/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+    "skills/bro/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+    "skills/ketchup-video/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+    "skills/ketchup/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+    "skills/recall/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+    "skills/sharpen/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94"
+  },
+  "sha256": {
+    "skills/ask-matt/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/ask-matt/PHASE-BOUNDARIES.md": "a8aa20158609ef39e2b308b6ba0660c91066838d07a867202e63a7744a88a3ed",
+    "skills/ask-matt/SKILL.md": "1371f5ce005de0992a44b137748bfb960a56948aa9871b405fe9d90b24332e3c",
+    "skills/ask-matt/agents/openai.yaml": "bdffbc5a0a99ed1b6ef3253d251d755fd18162b9845972e380007f844b09b05c",
+    "skills/automate-me/LICENSE.upstream": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+    "skills/automate-me/SKILL.md": "30b35f3628c4fd8c11af0ada06d14cdc3b28901810caca2480f627d4d21acfbe",
+    "skills/bro/LICENSE.upstream": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+    "skills/bro/SKILL.md": "aa329d0ceeeecb6822a7174ad76bb07a7826a3c52ceb6a588dec4138815084bb",
+    "skills/diagnosing-bugs/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/diagnosing-bugs/SKILL.md": "849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d",
+    "skills/diagnosing-bugs/agents/openai.yaml": "3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b",
+    "skills/diagnosing-bugs/scripts/hitl-loop.template.sh": "35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503",
+    "skills/domain-modeling/ADR-FORMAT.md": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+    "skills/domain-modeling/GLOSSARY-FORMAT.md": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
+    "skills/domain-modeling/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/domain-modeling/SKILL.md": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+    "skills/domain-modeling/agents/openai.yaml": "f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b",
+    "skills/grill-me/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/grill-me/SKILL.md": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+    "skills/grill-me/agents/openai.yaml": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b",
+    "skills/grill-with-docs/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/grill-with-docs/SKILL.md": "7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe",
+    "skills/grill-with-docs/agents/openai.yaml": "94cd0ab161fb468a836349f5ed482ba58ce8e709a05c57ce533d739dbd35cca9",
+    "skills/grilling/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/grilling/SKILL.md": "a146842ed93ca43d833550fa9adf02e58cb63c83fea9d4b4522995b82242d4e2",
+    "skills/grilling/agents/openai.yaml": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b",
+    "skills/handoff/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/handoff/SKILL.md": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3",
+    "skills/handoff/agents/openai.yaml": "5c479fd562c691851690e8b18c8501045bef0943c10743d636b2fae26add1d28",
+    "skills/implement-spec/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/implement-spec/SKILL.md": "1993a473cec40ac85d081c112cdffdc63ec3267c2e412055ad09e013a2f623d1",
+    "skills/implement-spec/agents/openai.yaml": "fd41efb42c60c96320d6531be7e4bf15cbf5518cd652d57dff27ccffa46988e9",
+    "skills/implement/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/implement/SKILL.md": "483bdc4ccf4ac31d86ac7beeaa0d0db80313e71e120bb8c59b3196ae5decd53d",
+    "skills/implement/agents/openai.yaml": "8970a8596ade0c28ab427f41a4ea242d6bdf6186c59ebf55e1238dbecaab79dc",
+    "skills/improve-codebase-architecture/HTML-REPORT.md": "581e8bb5a521e46bbda8ca7e19b15948bed882187108092ebb90c62513b77528",
+    "skills/improve-codebase-architecture/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/improve-codebase-architecture/SKILL.md": "35b03a3db61e0f5aa333ea59b54963e45a3d2ace6649b2ef4f9576603e2582a6",
+    "skills/improve-codebase-architecture/agents/openai.yaml": "c8cb20f68ebf0edb4e497bc11ae5fcaa196004e661cd189015b04f4109ced7f1",
+    "skills/ketchup-video/LICENSE.upstream": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+    "skills/ketchup-video/SKILL.md": "027aed9a01adf208aeac3a134f47d12f7c1e42d6fea03095aedc2bae58cdcfd1",
+    "skills/ketchup/LICENSE.upstream": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+    "skills/ketchup/SKILL.md": "f2923ffd14f6fc778f75a47aaed1f317fb5fd00b5701ca769d6446c74106dead",
+    "skills/pr/CREDITS.md": "a7a087127665d7298a72280ef6e19c41ad8404523712a788c8dc3ab414bc2497",
+    "skills/pr/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/pr/SKILL.md": "ab63f1cf78647389edcd386c9427c5dfca27ed2836930c24773ffee834c19bcd",
+    "skills/pr/agents/openai.yaml": "2295b586624db4ef546f3fd4695492f039d941a46d8a1593a702ce3ca511b8ad",
+    "skills/prototype/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/prototype/LOGIC.md": "f61c7d249e786a79ef289018901c348271e1798dd0b0bc5607b5c6f4d4a01ab9",
+    "skills/prototype/SKILL.md": "714de632d116bb73f65cdb5a882db15b9369a6713b9a47c0fad827848f0bfbe3",
+    "skills/prototype/UI.md": "723211e878acbc7b6ff09755263f3295cde724ba902ff0064da41eed51d45ad3",
+    "skills/prototype/agents/openai.yaml": "5af65e43ab41a350436697b81e27b7f848d36782043b73c322bb2c9fa9cc55dc",
+    "skills/recall/LICENSE.upstream": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+    "skills/recall/SKILL.md": "b0ceb996259c3404532f61e4b010df4e3d80d7ddbed85b3c302895723eb62a89",
+    "skills/research/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/research/SKILL.md": "1f629e18ab899412683bc6a1c4efb4339999e27c2fdac328f26ee10a8c031d33",
+    "skills/research/agents/openai.yaml": "9b4c470d63221c1f68f22df70b83e2f12401b317babe0d1b7b5f24a974474d0d",
+    "skills/retro/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/retro/SKILL.md": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+    "skills/retro/agents/openai.yaml": "cb6fb9d7e6b4be5975f41f6def1dd00a1255bad5d9b02696b124c924a8b8745c",
+    "skills/setup-matt-pocock-skills/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/setup-matt-pocock-skills/SKILL.md": "b01e05bfe8c323171275c6ceec78b12f1bd4c62dfd26c2cfe8be806d3883f1ed",
+    "skills/setup-matt-pocock-skills/agents/openai.yaml": "9527de0110541c45712319025155aeab8dc7d77c6ed6e5e83271bab1851ab939",
+    "skills/setup-matt-pocock-skills/domain.md": "593a7042218689f1d24df89df14eaf0a20e19e0d0a7d479a01947ac78f0784b9",
+    "skills/setup-matt-pocock-skills/issue-tracker-github.md": "6fdb3e9b00b7b0b115ecac3b1c00e3790f637f190abf598815368722c0a94692",
+    "skills/setup-matt-pocock-skills/issue-tracker-gitlab.md": "947602d33a80f98f939fb990995b8f95a3459b114b919c4221d08bd75d7cffe0",
+    "skills/setup-matt-pocock-skills/issue-tracker-local.md": "7dcda20a2eb4bdc89b95d1143423c0691309921cadae3132e6424f371030506e",
+    "skills/setup-matt-pocock-skills/triage-labels.md": "ae512af838c78b8750471c42cd2b20fa32319553e61d84c9a23d171b40ce14aa",
+    "skills/sharpen/LICENSE.upstream": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+    "skills/sharpen/SKILL.md": "563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2",
+    "skills/to-questionnaire/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/to-questionnaire/SKILL.md": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+    "skills/to-questionnaire/agents/openai.yaml": "9e8a06c38c8842eea8d4922cb9d1ead8e3ace647bab259b943c994a1b4742bc2",
+    "skills/to-spec/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/to-spec/SKILL.md": "43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088",
+    "skills/to-spec/agents/openai.yaml": "1c5b4d1e3d8e52287ef19cc2742fdbbfae1914ac75d33af3e4c8174f08cc55bb",
+    "skills/to-tickets/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/to-tickets/SKILL.md": "56ec23c5b2782785d4e65bff9e315b6d3aeb4ef977c174a219e99489fada1995",
+    "skills/to-tickets/agents/openai.yaml": "21bc6215fffcd7614e9f772bb1760e87cc5fc7dcc707e7d282bc9414267a6090",
+    "skills/triage/AGENT-BRIEF.md": "7f5f87fed3033df1b06e083c480f3e847b1fbb0647746b8a4c6a50f9f26ef44f",
+    "skills/triage/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/triage/OUT-OF-SCOPE.md": "1fbf9b432130c6380aa65813b55553cfda150309b27c595e183f8e335b8a190d",
+    "skills/triage/SKILL.md": "917b0baf74be583e74f110857ed45df2766617f75c00baf61fd136d7af515edf",
+    "skills/triage/agents/openai.yaml": "2e683717720cf456d165d0bb1a68bb600d0b6a8ccb61841c172e50d26f95351c",
+    "skills/wait-what/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/wait-what/SKILL.md": "d961bb37defd975c539427edb8f450cdbccdcdd552e213c1ece46676a7970905",
+    "skills/wait-what/agents/openai.yaml": "b41faadf741d51e4ea184148b2d1854d93f947aaf754c7844f70a00f04194999",
+    "skills/wayfinder/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/wayfinder/SKILL.md": "0c9fa96791aebf3b7d654cf35c6aadde97d81f57c17b07d13b27c14d9c46561f",
+    "skills/wayfinder/agents/openai.yaml": "88bc81a11a6d52ac67aeaa76b8b619e387020d47c5133a4dd4927fd15c4ad073",
+    "skills/weekly-review/LICENSE.upstream": "702f5f331b56aff0e33d8c7826df5202559f894145eb70355c6477b55b5bb8a0",
+    "skills/weekly-review/SKILL.md": "b56a2c283916b4551aeb322398ab99a19b4b5d7678ffd7f9c9f3df9fa05f4712",
+    "skills/what-did-i-get-done/LICENSE.upstream": "702f5f331b56aff0e33d8c7826df5202559f894145eb70355c6477b55b5bb8a0",
+    "skills/what-did-i-get-done/SKILL.md": "479813c9abaacb5b6b0531f1de7dc5eb2f3bd9673707a992d1073335836e82f8",
+    "skills/wizard/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/wizard/SKILL.md": "bdf31d48211ea559878f95a4f344aeabf8d85897488ba564382bab0b000daac1",
+    "skills/wizard/agents/openai.yaml": "98f44d682d58e262f160dc59a8befc365e0aa65820dd0261864af26aa8e59d83",
+    "skills/wizard/template.sh": "6566f147299bc6f1d941e64591ed04385416d543e11f96f564c7228f5018d0ed",
+    "skills/workflow-from-chats/LICENSE.upstream": "702f5f331b56aff0e33d8c7826df5202559f894145eb70355c6477b55b5bb8a0",
+    "skills/workflow-from-chats/SKILL.md": "b568176390165921c5e351cc73b553e3e997f92c9f85dfb1c5a220c943fbaa16",
+    "skills/writing-for-agents/LICENSE.upstream": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "skills/writing-for-agents/SKILL-MECHANICS.md": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+    "skills/writing-for-agents/SKILL.md": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+    "skills/writing-for-agents/agents/openai.yaml": "eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b"
+  },
+  "skills": {
+    "ask-matt": {
+      "external_skills": [
+        "tdd",
+        "code-review",
+        "codebase-design",
+        "teach"
+      ],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/ask-matt"
+    },
+    "automate-me": {
+      "external_skills": [
+        "poteto-mode",
+        "unslop",
+        "create-skill"
+      ],
+      "source": "pstack",
+      "upstream_path": "skills/automate-me"
+    },
+    "bro": {
+      "external_skills": [],
+      "source": "pstack",
+      "upstream_path": "skills/bro"
+    },
+    "diagnosing-bugs": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/diagnosing-bugs"
+    },
+    "domain-modeling": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/domain-modeling"
+    },
+    "grill-me": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/productivity/grill-me"
+    },
+    "grill-with-docs": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/grill-with-docs"
+    },
+    "grilling": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/productivity/grilling"
+    },
+    "handoff": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/productivity/handoff"
+    },
+    "implement": {
+      "external_skills": [
+        "tdd",
+        "code-review"
+      ],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/implement"
+    },
+    "implement-spec": {
+      "external_skills": [
+        "tdd",
+        "code-review"
+      ],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/implement-spec"
+    },
+    "improve-codebase-architecture": {
+      "external_skills": [
+        "codebase-design"
+      ],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/improve-codebase-architecture"
+    },
+    "ketchup": {
+      "external_skills": [],
+      "source": "pstack",
+      "upstream_path": "skills/ketchup"
+    },
+    "ketchup-video": {
+      "external_skills": [],
+      "source": "pstack",
+      "upstream_path": "skills/ketchup-video"
+    },
+    "pr": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/pr"
+    },
+    "prototype": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/prototype"
+    },
+    "recall": {
+      "external_skills": [
+        "poteto-mode",
+        "why",
+        "unslop"
+      ],
+      "source": "pstack",
+      "upstream_path": "skills/recall"
+    },
+    "research": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/research"
+    },
+    "retro": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/retro"
+    },
+    "setup-matt-pocock-skills": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/setup-matt-pocock-skills"
+    },
+    "sharpen": {
+      "external_skills": [],
+      "source": "pstack",
+      "upstream_path": "skills/sharpen"
+    },
+    "to-questionnaire": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/productivity/to-questionnaire"
+    },
+    "to-spec": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/to-spec"
+    },
+    "to-tickets": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/to-tickets"
+    },
+    "triage": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/triage"
+    },
+    "wait-what": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/productivity/wait-what"
+    },
+    "wayfinder": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/wayfinder"
+    },
+    "weekly-review": {
+      "external_skills": [],
+      "source": "cursor-team-kit",
+      "upstream_path": "skills/weekly-review"
+    },
+    "what-did-i-get-done": {
+      "external_skills": [],
+      "source": "cursor-team-kit",
+      "upstream_path": "skills/what-did-i-get-done"
+    },
+    "wizard": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/engineering/wizard"
+    },
+    "workflow-from-chats": {
+      "external_skills": [],
+      "source": "cursor-team-kit",
+      "upstream_path": "skills/workflow-from-chats"
+    },
+    "writing-for-agents": {
+      "external_skills": [],
+      "source": "mattpocock",
+      "upstream_path": "skills/productivity/writing-for-agents"
+    }
+  },
+  "sources": {
+    "cursor-team-kit": {
+      "repository": "https://github.com/cursor/plugins",
+      "revision": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe",
+      "subdirectory": "cursor-team-kit"
+    },
+    "mattpocock": {
+      "repository": "https://github.com/mattpocock/skills",
+      "revision": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa",
+      "subdirectory": "."
+    },
+    "pstack": {
+      "repository": "https://github.com/cursor/plugins",
+      "revision": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe",
+      "subdirectory": "pstack"
+    }
+  },
+  "version": 1
+}

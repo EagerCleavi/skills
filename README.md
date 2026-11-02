@@ -33,6 +33,43 @@ verification commands in **First-time Verification**.
 
 The seven `brain*` skills form one versioned suite. Install and update them together; operator skills are not standalone packages.
 
+## Imported personal collection
+
+The repository now contains **42 skills**: the ten existing skills above plus 32 personal
+workflows from Matt Pocock, pstack, and cursor-team-kit. See the
+[imported catalog](docs/personal-skills.md) for descriptions and manual/passive invocation,
+and the [collision and overlap review](docs/collisions-and-overlaps.md) for routing boundaries,
+external project-skill dependencies, and host adaptations. There were no exact skill-name collisions.
+
+The personal additions include the complete selected grilling family, research, planning,
+handoff, debugging, retrospectives, communication, and preference workflows. They do not
+include the project QA collection or the repo-side `/help` skill. Matt's `tdd`, `codebase-design`,
+and `code-review` remain project-local in `EagerCleavi/mesh-engineering-skills`.
+
+Install only the new personal additions with explicit selection:
+
+```sh
+npx skills add . --global --agent codex \
+  --skill ask-matt --skill automate-me --skill bro --skill diagnosing-bugs \
+  --skill domain-modeling --skill grill-me --skill grill-with-docs --skill grilling \
+  --skill handoff --skill implement --skill implement-spec --skill improve-codebase-architecture \
+  --skill ketchup --skill ketchup-video --skill pr --skill prototype --skill recall \
+  --skill research --skill retro --skill setup-matt-pocock-skills --skill sharpen \
+  --skill to-questionnaire --skill to-spec --skill to-tickets --skill triage \
+  --skill wait-what --skill wayfinder --skill weekly-review --skill what-did-i-get-done \
+  --skill wizard --skill workflow-from-chats --skill writing-for-agents --yes
+```
+
+Use the relevant supported agent flag for other hosts. After installation, add a pointer to
+`docs/collisions-and-overlaps.md` from the host's personal instructions using the stable absolute
+path of this source checkout. Retain the existing brain bootstrap. Installation does not run
+tracker setup, configure attribution, scan transcripts, or edit your vault. A personal workflow
+that calls a repo-side engineering skill requires that skill in the consuming project.
+
+Run `npm run skills:validate:personal` to verify the imported source hashes, unique names,
+frontmatter, and explicit-only policies. Declared external dependencies are reported separately.
+The manifest pins all source revisions, and each imported skill retains its upstream license.
+
 ## Initialize a Brain Vault
 
 The brain suite expects an initialized Contract v2 Markdown vault; installing the skills does not create one. Before running `configure:brain`, create or migrate a vault with these root routers:

@@ -43,6 +43,16 @@ class QuickValidateTests(unittest.TestCase):
             self.assertFalse(valid)
             self.assertIn("must match parent directory", message)
 
+    def test_explicit_invocation_metadata_is_valid_and_typed(self):
+        with tempfile.TemporaryDirectory() as temp:
+            skill = self.write_skill(Path(temp), "manual-skill", "manual-skill", "Run explicitly.")
+            path = skill / "SKILL.md"
+            original = path.read_text()
+            path.write_text(original.replace("description: Run explicitly.\n", 'description: Run explicitly.\ndisable-model-invocation: true\nargument-hint: "optional topic"\n'))
+            self.assertTrue(validate_skill(skill)[0])
+            path.write_text(path.read_text().replace("disable-model-invocation: true", 'disable-model-invocation: "true"'))
+            self.assertEqual(validate_skill(skill)[:2], (False, "disable-model-invocation must be a boolean"))
+
     def test_packager_excludes_private_config_and_development_files(self):
         self.assertTrue(should_exclude(Path("attribution/references/attribution-config.md")))
         self.assertTrue(should_exclude(Path("brain/evals/evals.json")))
