@@ -89,7 +89,7 @@ def validate_skill(skill_path):
         return False, f"Invalid YAML in frontmatter: {e}"
 
     # Define allowed properties
-    ALLOWED_PROPERTIES = {'name', 'description', 'license', 'allowed-tools', 'metadata', 'compatibility', 'disable-model-invocation', 'argument-hint'}
+    ALLOWED_PROPERTIES = {'name', 'description', 'license', 'allowed-tools', 'metadata', 'compatibility', 'disable-model-invocation', 'argument-hint', 'icon', 'color', 'paths'}
 
     # Check for unexpected properties (excluding nested keys under metadata)
     unexpected_keys = set(frontmatter.keys()) - ALLOWED_PROPERTIES
@@ -103,6 +103,13 @@ def validate_skill(skill_path):
         return False, "disable-model-invocation must be a boolean"
     if 'argument-hint' in frontmatter and not isinstance(frontmatter['argument-hint'], str):
         return False, "argument-hint must be a string"
+
+    for key in ('icon', 'color'):
+        if key in frontmatter and not isinstance(frontmatter[key], str):
+            return False, f"{key} must be a string"
+
+    if 'paths' in frontmatter and (not isinstance(frontmatter['paths'], list) or not all(isinstance(p, str) for p in frontmatter['paths'])):
+        return False, "paths must be a list of strings"
 
     # Check required fields
     if 'name' not in frontmatter:

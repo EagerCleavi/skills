@@ -35,40 +35,43 @@ The seven `brain*` skills form one versioned suite. Install and update them toge
 
 ## Imported personal collection
 
-The repository now contains **42 skills**: the ten existing skills above plus 32 personal
-workflows from Matt Pocock, pstack, and cursor-team-kit. See the
+The repository now contains **95 skills**: the ten existing skills above plus 32 primary personal
+workflows and 53 required dependency copies from Matt Pocock, pstack, and cursor-team-kit. See the
 [imported catalog](docs/personal-skills.md) for descriptions and manual/passive invocation,
 and the [collision and overlap review](docs/collisions-and-overlaps.md) for routing boundaries,
-external project-skill dependencies, and host adaptations. There were no exact skill-name collisions.
+dependency closure, and host adaptations. There were no exact skill-name collisions.
 
 The personal additions include the complete selected grilling family, research, planning,
 handoff, debugging, retrospectives, communication, and preference workflows. They do not
-include the project QA collection or the repo-side `/help` skill. Matt's `tdd`, `codebase-design`,
-and `code-review` remain project-local in `EagerCleavi/mesh-engineering-skills`.
+include the project QA collection or repo-side `/help`. Matt's `tdd`, `codebase-design`, and
+`code-review` retain repo ownership but are duplicated here because the personal implementation
+workflows require them. Pstack playbooks bring their complete supporting principles and tools.
 
-Install only the new personal additions with explicit selection:
+Install the complete personal collection, including its dependencies:
 
 ```sh
-npx skills add . --global --agent codex \
-  --skill ask-matt --skill automate-me --skill bro --skill diagnosing-bugs \
-  --skill domain-modeling --skill grill-me --skill grill-with-docs --skill grilling \
-  --skill handoff --skill implement --skill implement-spec --skill improve-codebase-architecture \
-  --skill ketchup --skill ketchup-video --skill pr --skill prototype --skill recall \
-  --skill research --skill retro --skill setup-matt-pocock-skills --skill sharpen \
-  --skill to-questionnaire --skill to-spec --skill to-tickets --skill triage \
-  --skill wait-what --skill wayfinder --skill weekly-review --skill what-did-i-get-done \
-  --skill wizard --skill workflow-from-chats --skill writing-for-agents --yes
+npx skills add . --global --agent codex --all --yes
 ```
+
+This installs all 95 skills, including the complete existing brain suite. For a selective installation,
+include the requested skills and the transitive `requires` entries from the import manifest;
+`npx skills` does not resolve that graph automatically.
 
 Use the relevant supported agent flag for other hosts. After installation, add a pointer to
 `docs/collisions-and-overlaps.md` from the host's personal instructions using the stable absolute
 path of this source checkout. Retain the existing brain bootstrap. Installation does not run
-tracker setup, configure attribution, scan transcripts, or edit your vault. A personal workflow
-that calls a repo-side engineering skill requires that skill in the consuming project.
+tracker setup, configure attribution, scan transcripts, or edit your vault. Required skill dependencies are included in this collection. Runtime tools, model access,
+credentials, and per-project initialization still need their normal setup.
 
 Run `npm run skills:validate:personal` to verify the imported source hashes, unique names,
-frontmatter, and explicit-only policies. Declared external dependencies are reported separately.
+frontmatter, and explicit-only policies. Missing required skills or host-capability providers fail validation.
 The manifest pins all source revisions, and each imported skill retains its upstream license.
+
+The original helpers under `poteto-mode/scripts` and `statechart/scripts` have their own
+package manifests and runtime requirements (including Bun and formal-verification tooling where
+applicable). They are preserved as upstream packages and excluded from the brain toolkit's root
+TypeScript compilation. Their source hashes are checked; install and run their own checks when
+adopting those capabilities. Root tests do not claim those runtime environments are initialized.
 
 ## Initialize a Brain Vault
 

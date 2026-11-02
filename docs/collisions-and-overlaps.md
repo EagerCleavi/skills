@@ -3,7 +3,7 @@
 Compared against `EagerCleavi/skills` main at `99122ae` before import. The 32 additions
 come from the accepted personal selection in `EagerCleavi/mesh-engineering-skills`.
 There were **zero exact directory or frontmatter-name collisions** with the ten existing
-skills. The result is 42 discoverable skills. No existing skill was removed or renamed.
+skills. Dependency expansion now adds 53 shared engineering skills, for 95 discoverable skills total. No existing skill was removed or renamed.
 
 ## Routing and ownership boundaries
 
@@ -21,24 +21,38 @@ skills. The result is 42 discoverable skills. No existing skill was removed or r
 | `writing-for-agents` vs `skill-creator` | Writing-for-agents supplies writing mechanics; skill-creator handles the full authoring/evaluation lifecycle. | Reference and workflow are complementary; imported upstream text remains unchanged. |
 | `excalidraw` vs imported writing/prototype/PR visuals | Excalidraw is the existing editable technical-diagram workflow. A PR sketch or throwaway UI prototype is not automatically an Excalidraw task. | Preserve the existing diagram/render workflow when a technical canvas is requested. |
 
-## Dependencies deliberately kept outside the personal set
+## Required dependencies are included
 
-These additions are a personal toolbox, not a replacement for the project engineering bundle.
-Do not silently install the repo set globally to satisfy a missing dependency.
+The user explicitly authorized duplicating required skills across personal and project sets.
+Primary ownership still controls where project facts and conventions live; it no longer prevents
+installing a required supporting skill on both sides. The import now includes **32 primary
+personal skills and 53 shared dependencies**, plus the ten pre-existing skills.
 
-| Personal workflow | External skill or host capability | How to satisfy it |
-|---|---|---|
-| `implement`, `implement-spec` | Matt `tdd` and `code-review` | Install the shared project set in the consuming repo. TDD also consults `codebase-design`. |
-| `improve-codebase-architecture` | Matt `codebase-design` | Use the consuming project's shared skill. |
-| `recall` | pstack `why`, `unslop`, `poteto-mode`, scoped transcript access | Use the consuming project bundle and a host-supported history source. Do not invent or traverse unrelated transcript locations. |
-| `automate-me` | pstack `poteto-mode`, `unslop`; Cursor `create-skill` | Use project pstack references; on Codex use the existing `skill-creator` for authoring. |
-| `ask-matt` | Router references `tdd`, `code-review`, `codebase-design`, and Matt's unselected `teach` | Treat the first three as project prerequisites. Matt's teaching workflow is not imported. Do not silently substitute pstack's different `teach`. |
-| `ketchup-video` | Video rendering and frame inspection tools | Optional; follow its text fallback when rendering is unavailable. |
-| Tracker workflows | Project tracker/domain setup and authenticated tracker access | User invokes `/setup-matt-pocock-skills` once per project; outputs remain project-owned. |
+`imports/personal-skills.lock.json` records the required graph. Missing required skills fail
+validation. The closure includes Matt's `tdd`, `code-review`, and `codebase-design`; pstack's
+`why`, `unslop`, `poteto-mode`, and its design/review/control/writing/verification workflows;
+and all 24 leaf principles used by those playbooks. This is intentionally transitive: copying
+only direct callees would leave the broader playbooks incomplete.
 
-The manifest records external names. Validation reports these declared dependencies without
-pretending they are installed. A missing required capability must be surfaced at invocation.
-Retained router references are not proof that every upstream skill exists here.
+`create-skill` is a host capability, mapped to the existing `skill-creator` on Codex/Claude.
+The original pstack `poteto-agent` and `comment-sicko` definitions and harness adapters travel
+inside `poteto-mode/support/`. When a host lacks those native agent types, read the matching
+support definition and supply it to the host's subagent tool. Use only available models and
+honor project instructions and user authorization over upstream default autonomy language.
+
+The project set also duplicates `bro`, `ketchup`, and `setup-matt-pocock-skills`. Shared
+skill copies must stay at the same recorded revisions. When both project and personal copies
+are installed, inspect host precedence; a name match is intentional only when the implementation
+and source revision match. Do not use a global copy to override customized project policy.
+
+Pure router menus and conditional "is installed" checks do not add required dependencies.
+Matt's `ask-matt` includes an optional `/teach` reference to his unselected educational workflow;
+pstack's different `teach` remains unimported here. Do not silently substitute it. The grilling
+family remains personal and is not pulled into project repos by the dependency graph.
+
+The collection is complete for recorded **skill** dependencies. Transcript access, video rendering,
+authentication, verified model choices, runtime packages, and project tracker/TDD setup remain
+separate capabilities and must not be claimed ready from installation alone.
 
 ## Host integration
 
@@ -50,7 +64,7 @@ the configured personal discovery root. Do not guess a transcript API or broad-s
 directories. Model roles must use supported models or the parent model; upstream model
 names are not evidence of local availability.
 
-Manual-only imports retain `disable-model-invocation: true`. Six pstack imports also receive
+Manual-only imports retain `disable-model-invocation: true`. Pstack explicit-only imports also receive
 separate `agents/openai.yaml` policy adapters, because their upstream snapshot supplied no
 Codex policy file. Those adapters disable implicit invocation; upstream skill text is unchanged.
 User-only Matt skills must not be invoked by another skill. Merely mentioning their names in

@@ -32,6 +32,17 @@ def main():
             path = ROOT / relative
             if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
                 errors.append(f"Imported file differs from recorded snapshot: {relative}")
+    if manifest["version"] != 2:
+        errors.append("Expected dependency-aware import manifest version 2")
+    for name, dependencies in manifest["requires"].items():
+        if name not in manifest["skills"]:
+            errors.append(f"Unknown workflow in dependency graph: {name}")
+        for dependency in dependencies:
+            if dependency not in names:
+                errors.append(f"Missing required skill: {name} -> {dependency}")
+    for capability, provider in manifest["host_capabilities"].items():
+        if provider not in names:
+            errors.append(f"Missing host capability provider: {capability} -> {provider}")
     for name, record in manifest["skills"].items():
         path = ROOT / "skills" / name
         result = validator.validate_skill(path)
@@ -48,12 +59,9 @@ def main():
                    for collection in ("sha256", "generated_metadata")
                    for relative in manifest[collection] if (ROOT / relative).is_relative_to(path)}
         actual = {str(p.relative_to(path)) for p in path.rglob("*")
-                  if p.is_file() and "__pycache__" not in p.parts}
+                  if p.is_file() and not {"__pycache__", "node_modules"}.intersection(p.parts)}
         if actual != tracked:
             errors.append(f"Unrecorded or missing imported files for {name}: {sorted(actual ^ tracked)}")
-        unresolved = [dep for dep in record["external_skills"] if dep not in names]
-        if unresolved:
-            print(f"Declared external dependencies for {name}: {', '.join(unresolved)}")
     if errors:
         print("\n".join(errors), file=sys.stderr)
         return 1

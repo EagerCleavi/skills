@@ -8,7 +8,15 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "noEmit": true,
-    "types": ["node"]
+    "types": [
+      "node"
+    ]
   },
-  "include": ["skills/**/*.ts"]
+  "include": [
+    "skills/**/*.ts"
+  ],
+  "exclude": [
+    "skills/poteto-mode/scripts/**",
+    "skills/statechart/scripts/**"
+  ]
 }

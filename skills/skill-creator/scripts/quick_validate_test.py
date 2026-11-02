@@ -53,6 +53,15 @@ class QuickValidateTests(unittest.TestCase):
             path.write_text(path.read_text().replace("disable-model-invocation: true", 'disable-model-invocation: "true"'))
             self.assertEqual(validate_skill(skill)[:2], (False, "disable-model-invocation must be a boolean"))
 
+    def test_cursor_display_metadata_is_valid_and_typed(self):
+        with tempfile.TemporaryDirectory() as temp:
+            skill = self.write_skill(Path(temp), "cursor-style", "cursor-style", "A workflow.")
+            path = skill / "SKILL.md"
+            path.write_text(path.read_text().replace("description: A workflow.\n", "description: A workflow.\nicon: crown\ncolor: yellow\npaths: ['**/*.ts']\n"))
+            self.assertTrue(validate_skill(skill)[0])
+            path.write_text(path.read_text().replace("icon: crown", "icon: 12"))
+            self.assertEqual(validate_skill(skill)[:2], (False, "icon must be a string"))
+
     def test_packager_excludes_private_config_and_development_files(self):
         self.assertTrue(should_exclude(Path("attribution/references/attribution-config.md")))
         self.assertTrue(should_exclude(Path("brain/evals/evals.json")))
