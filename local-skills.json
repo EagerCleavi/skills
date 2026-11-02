@@ -1,0 +1,18 @@
+{
+  "setup-personal": {
+    "path": "skills/setup-personal",
+    "requires": [
+      "brain",
+      "brain-contextualize",
+      "brain-recall",
+      "brain-remember",
+      "brain-consolidate",
+      "brain-synthesize",
+      "brain-build",
+      "attribution",
+      "setup-matt-pocock-skills",
+      "setup-pstack",
+      "poteto-mode"
+    ]
+  }
+}

@@ -27,6 +27,15 @@ def main():
         if name != path.parent.name or name in names:
             errors.append(f"Skill name collision or directory mismatch: {path}")
         names[name] = path
+    local_path = ROOT / "local-skills.json"
+    local = json.loads(local_path.read_text()) if local_path.is_file() else {}
+    for name, record in local.items():
+        result = validator.validate_skill(ROOT / record["path"])
+        if not result[0]:
+            errors.append(f"{name}: {result[1]}")
+        for dependency in record["requires"]:
+            if dependency not in names:
+                errors.append(f"Missing local skill dependency: {name} -> {dependency}")
     for collection in ("sha256", "generated_metadata"):
         for relative, expected in manifest[collection].items():
             path = ROOT / relative

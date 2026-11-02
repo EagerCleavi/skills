@@ -1,0 +1,23 @@
+{
+  "skill_name": "setup-personal",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "/setup-personal --check\nSynthetic evidence only: active host Codex; all collection skills are available at supplied native-loader bases. Canonical brain configuration is missing, attribution identity is missing, host instructions do not contain brain-contextualize. No project path was supplied. Do not inspect real machine state, run setup, install anything, or modify files.",
+      "expected_output": "Read-only readiness table, missing brain and attribution and incomplete host wiring, project modules not applicable, concrete next actions without choosing a vault or identity. No setup or mutations.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "/setup-personal --project /fixture/app\nSynthetic evidence only: active host Codex; personal brain configuration, compatible suite, attribution, and bootstrap are already verified and unchanged. The named project has current Matt tracker/domain docs and no triage adoption. Project pstack model configuration is missing; the only supported model choice is inherit-parent. Do not inspect actual machine state or write files. Explain the next setup action and any required choices.",
+      "expected_output": "Skip unchanged personal and Matt setup, do not require triage labels, propose project-local .agents/pstack-models.md and instruction pointer after budget/role confirmation, use only inherit-parent, do not invoke user-only Matt setup or enable poteto-mode. No actual writes.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "/setup-personal --refresh brain\nSynthetic evidence only: configuration points to an existing nonempty legacy vault with missing contract routers and important notes. The user has not authorized migration, overwrite, deletion, or cleanup. Do not inspect a real vault or change files. Explain the safe next action.",
+      "expected_output": "Read-only assessment and brain-consolidate safeguards; no new-vault scaffold over the existing vault, no automated migration or destructive repair, concrete proposed assessment before asking for any required repair approval.",
+      "files": []
+    }
+  ]
+}

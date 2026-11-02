@@ -11,7 +11,7 @@
     "brain:patterns": "tsx skills/brain-synthesize/scripts/report-patterns.ts report",
     "brain:suite:verify": "tsx skills/brain/scripts/validate-suite.ts",
     "skills:list": "skills add . --list",
-    "skills:validate": "npm run skills:validate:attribution && npm run skills:validate:brain-suite && npm run skills:validate:excalidraw && npm run skills:validate:skill-creator && npm run skills:validate:personal",
+    "skills:validate": "npm run skills:validate:attribution && npm run skills:validate:brain-suite && npm run skills:validate:excalidraw && npm run skills:validate:skill-creator && npm run skills:validate:personal && npm run skills:validate:setup-personal",
     "skills:validate:attribution": "uv run --with pyyaml skills/skill-creator/scripts/quick_validate.py skills/attribution",
     "skills:validate:excalidraw": "uv run --with pyyaml skills/skill-creator/scripts/quick_validate.py skills/excalidraw",
     "skills:validate:brain": "uv run --with pyyaml skills/skill-creator/scripts/quick_validate.py skills/brain",
@@ -23,11 +23,13 @@
     "skills:validate:brain-build": "uv run --with pyyaml skills/skill-creator/scripts/quick_validate.py skills/brain-build",
     "skills:validate:brain-suite": "npm run skills:validate:brain && npm run skills:validate:brain-contextualize && npm run skills:validate:brain-recall && npm run skills:validate:brain-remember && npm run skills:validate:brain-consolidate && npm run skills:validate:brain-synthesize && npm run skills:validate:brain-build && npm run brain:suite:verify",
     "skills:validate:skill-creator": "uv run --with pyyaml skills/skill-creator/scripts/quick_validate.py skills/skill-creator",
-    "test": "npm run test:brain && npm run test:skill-tooling",
+    "test": "npm run test:brain && npm run test:skill-tooling && npm run test:personal-setup",
     "test:brain": "tsx --test skills/brain/scripts/*.test.ts skills/brain-synthesize/scripts/*.test.ts",
     "test:skill-tooling": "PYTHONDONTWRITEBYTECODE=1 uv run --with pyyaml python skills/skill-creator/scripts/quick_validate_test.py",
     "typecheck": "tsc --noEmit",
-    "skills:validate:personal": "uv run --with pyyaml python scripts/validate-personal-imports.py"
+    "skills:validate:personal": "uv run --with pyyaml python scripts/validate-personal-imports.py",
+    "skills:validate:setup-personal": "uv run --with pyyaml python skills/skill-creator/scripts/quick_validate.py skills/setup-personal",
+    "test:personal-setup": "python3 -m unittest discover -s skills/setup-personal/scripts -p \"test_*.py\""
   },
   "devDependencies": {
     "@types/node": "^22.15.3",

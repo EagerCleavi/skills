@@ -1,0 +1,647 @@
+{
+  "version": 1,
+  "preconditions": {
+    "brain": [
+      "brain",
+      "brain-contextualize",
+      "brain-recall",
+      "brain-remember",
+      "brain-consolidate",
+      "brain-synthesize",
+      "brain-build"
+    ],
+    "attribution": [
+      "attribution"
+    ],
+    "host": [
+      "brain"
+    ],
+    "matt": [
+      "setup-matt-pocock-skills"
+    ],
+    "pstack": [
+      "setup-pstack",
+      "poteto-mode"
+    ]
+  },
+  "ownership": {
+    "brain": "personal",
+    "attribution": "personal",
+    "host": "personal",
+    "matt": "project",
+    "pstack": "project",
+    "capabilities": "conditional"
+  },
+  "skills": {
+    "architect": {
+      "modules": [
+        "pstack"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "arena": {
+      "modules": [
+        "pstack"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "ask-matt": {
+      "modules": [
+        "matt"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "attribution": {
+      "modules": [
+        "attribution"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "automate-me": {
+      "modules": [
+        "pstack"
+      ],
+      "capabilities": [
+        "scoped_transcripts"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "benchmark-checklist": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "brain": {
+      "modules": [
+        "brain",
+        "host"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "brain-build": {
+      "modules": [
+        "brain",
+        "host"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "brain-consolidate": {
+      "modules": [
+        "brain",
+        "host"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "brain-contextualize": {
+      "modules": [
+        "brain",
+        "host"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "brain-recall": {
+      "modules": [
+        "brain",
+        "host"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "brain-remember": {
+      "modules": [
+        "brain",
+        "host"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "brain-synthesize": {
+      "modules": [
+        "brain",
+        "host"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "bro": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "code-review": {
+      "modules": [
+        "matt"
+      ],
+      "capabilities": [
+        "git_and_tracker_access"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "codebase-design": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "control-cli": {
+      "modules": [],
+      "capabilities": [
+        "browser_or_cli_control"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "control-ui": {
+      "modules": [],
+      "capabilities": [
+        "browser_or_cli_control"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "create-formal-verification-skill": {
+      "modules": [],
+      "capabilities": [
+        "formal_verification_runtime"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "create-verification-skill": {
+      "modules": [],
+      "capabilities": [
+        "adopted_app_harness"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "deslop": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "diagnosing-bugs": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "domain-modeling": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "excalidraw": {
+      "modules": [],
+      "capabilities": [
+        "diagram_rendering"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "figure-it-out": {
+      "modules": [
+        "pstack"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "grill-me": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "grill-with-docs": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "grilling": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "handoff": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "how": {
+      "modules": [
+        "pstack"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "implement": {
+      "modules": [
+        "matt"
+      ],
+      "capabilities": [
+        "git_and_tracker_access"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "implement-spec": {
+      "modules": [
+        "matt"
+      ],
+      "capabilities": [
+        "git_and_tracker_access"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "improve-codebase-architecture": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "in-your-own-words": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "interrogate": {
+      "modules": [
+        "pstack"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "ketchup": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "ketchup-video": {
+      "modules": [],
+      "capabilities": [
+        "video_rendering"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "maintain-formal-verification-skill": {
+      "modules": [],
+      "capabilities": [
+        "formal_verification_runtime"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "maintain-verification-skill": {
+      "modules": [],
+      "capabilities": [
+        "adopted_app_harness"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "no-comments": {
+      "modules": [
+        "pstack"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "poteto-mode": {
+      "modules": [
+        "pstack"
+      ],
+      "capabilities": [
+        "upstream_helper_packages"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "pr": {
+      "modules": [],
+      "capabilities": [
+        "git_and_tracker_access"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "principle-attack-the-premise": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-boundary-discipline": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-build-the-lever": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-encode-lessons-in-structure": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-exhaust-the-design-space": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-experience-first": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-explain-the-number": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-fix-root-causes": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-foundational-thinking": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-guard-the-context-window": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-laziness-protocol": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-make-operations-idempotent": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-migrate-callers-then-delete-legacy-apis": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-minimize-reader-load": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-model-the-domain": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-never-block-on-the-human": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-outcome-oriented-execution": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-prove-it-works": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-redesign-from-first-principles": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-separate-before-serializing-shared-state": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-sequence-verifiable-units": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-subtract-before-you-add": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-test-behavior-not-implementation": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "principle-type-system-discipline": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "prototype": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "recall": {
+      "modules": [
+        "pstack"
+      ],
+      "capabilities": [
+        "scoped_transcripts"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "reflect": {
+      "modules": [
+        "pstack"
+      ],
+      "capabilities": [
+        "scoped_transcripts"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "research": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "retro": {
+      "modules": [],
+      "capabilities": [
+        "scoped_transcripts"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "setup-matt-pocock-skills": {
+      "modules": [
+        "matt"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "setup-personal": {
+      "modules": [
+        "brain",
+        "attribution",
+        "host",
+        "matt",
+        "pstack"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "setup-pstack": {
+      "modules": [
+        "pstack"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "sharpen": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "show-me-your-work": {
+      "modules": [
+        "pstack"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "skill-creator": {
+      "modules": [],
+      "capabilities": [
+        "skill_evaluation_runtime"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "statechart": {
+      "modules": [],
+      "capabilities": [
+        "formal_verification_runtime",
+        "upstream_helper_packages"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "swarm": {
+      "modules": [
+        "pstack"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "tdd": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "technical-writing": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "to-questionnaire": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "to-spec": {
+      "modules": [
+        "matt"
+      ],
+      "capabilities": [
+        "git_and_tracker_access"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "to-tickets": {
+      "modules": [
+        "matt"
+      ],
+      "capabilities": [
+        "git_and_tracker_access"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "triage": {
+      "modules": [
+        "matt"
+      ],
+      "capabilities": [
+        "git_and_tracker_access"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "typescript-best-practices": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "unslop": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "verify-this": {
+      "modules": [],
+      "capabilities": [
+        "browser_or_cli_control"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "wait-what": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "wayfinder": {
+      "modules": [
+        "matt"
+      ],
+      "capabilities": [
+        "git_and_tracker_access"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "weekly-review": {
+      "modules": [],
+      "capabilities": [
+        "git_and_tracker_access"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "what-did-i-get-done": {
+      "modules": [],
+      "capabilities": [
+        "git_and_tracker_access"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "why": {
+      "modules": [
+        "pstack"
+      ],
+      "capabilities": [],
+      "persistent_setup": "conditional"
+    },
+    "wizard": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    },
+    "workflow-from-chats": {
+      "modules": [],
+      "capabilities": [
+        "scoped_transcripts"
+      ],
+      "persistent_setup": "conditional"
+    },
+    "writing-for-agents": {
+      "modules": [],
+      "capabilities": [],
+      "persistent_setup": "none"
+    }
+  }
+}

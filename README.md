@@ -33,10 +33,32 @@ verification commands in **First-time Verification**.
 
 The seven `brain*` skills form one versioned suite. Install and update them together; operator skills are not standalone packages.
 
+## Unified setup
+
+After installing the personal collection, use:
+
+```text
+/setup-personal
+/setup-personal --check
+/setup-personal --project /absolute/path/to/project
+/setup-personal --refresh attribution
+```
+
+`setup-personal` is explicit-only. It handles brain vault/configuration and host bootstrap,
+attribution identity, and adopted personal-tool prerequisites. With a named project it also
+handles Matt's tracker/domain setup and pstack/Cursor role configuration. It reuses current
+settings, shows drafts before required confirmations, and supports targeted refresh. Check
+mode observes without changing anything. Installing the skill does not configure your machine.
+
+Personal setup is per user/host. Tracker/domain and model-role policy remain project-owned,
+configured once per project. TDD seams are still agreed per task. Optional browser, diagram,
+media, and formal-verification runtimes are checked only when adopted. See the
+[setup guide](docs/personal-setup.md) for lifecycle, ownership, and verification details.
+
 ## Imported personal collection
 
-The repository now contains **95 skills**: the ten existing skills above plus 32 primary personal
-workflows and 53 required dependency copies from Matt Pocock, pstack, and cursor-team-kit. See the
+The repository now contains **96 skills**: the ten existing skills above plus 32 primary personal
+workflows, 53 required dependency copies from Matt Pocock, pstack, and cursor-team-kit, and the local `setup-personal` orchestrator. See the
 [imported catalog](docs/personal-skills.md) for descriptions and manual/passive invocation,
 and the [collision and overlap review](docs/collisions-and-overlaps.md) for routing boundaries,
 dependency closure, and host adaptations. There were no exact skill-name collisions.
@@ -53,8 +75,8 @@ Install the complete personal collection, including its dependencies:
 npx skills add . --global --agent codex --all --yes
 ```
 
-This installs all 95 skills, including the complete existing brain suite. For a selective installation,
-include the requested skills and the transitive `requires` entries from the import manifest;
+This installs all 96 skills, including the complete existing brain suite. For a selective installation,
+include the requested skills and the transitive `requires` entries from the import manifest and `local-skills.json`;
 `npx skills` does not resolve that graph automatically.
 
 Use the relevant supported agent flag for other hosts. After installation, add a pointer to

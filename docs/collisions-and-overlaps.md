@@ -3,7 +3,7 @@
 Compared against `EagerCleavi/skills` main at `99122ae` before import. The 32 additions
 come from the accepted personal selection in `EagerCleavi/mesh-engineering-skills`.
 There were **zero exact directory or frontmatter-name collisions** with the ten existing
-skills. Dependency expansion now adds 53 shared engineering skills, for 95 discoverable skills total. No existing skill was removed or renamed.
+skills. Dependency expansion now adds 53 shared engineering skills, for 95 existing discoverable skills. The local setup-personal orchestrator brings the total to 96. No existing skill was removed or renamed.
 
 ## Routing and ownership boundaries
 
@@ -53,6 +53,13 @@ family remains personal and is not pulled into project repos by the dependency g
 The collection is complete for recorded **skill** dependencies. Transcript access, video rendering,
 authentication, verified model choices, runtime packages, and project tracker/TDD setup remain
 separate capabilities and must not be claimed ready from installation alone.
+
+## Unified setup
+
+`setup-personal` coordinates existing personal and project setup contracts under an explicit
+user invocation. It does not replace brain routing, auto-run user-only setup skills, activate
+poteto-mode, or turn per-task TDD agreement into a setup checkbox. Its own local registry lives
+in `local-skills.json`; it is not an upstream import. See [personal-setup.md](personal-setup.md).
 
 ## Host integration
 

@@ -3,6 +3,7 @@
 Read `docs/collisions-and-overlaps.md` before changing imported personal workflows.
 Preserve imported skill names, upstream instructions, licenses, and recorded hashes.
 `imports/personal-skills.lock.json` owns the 85 imported primary/dependency skills and their required dependency graph.
+`local-skills.json` owns the local `setup-personal` orchestrator; its setup contract covers the shipped skill collection.
 Existing brain-suite skills remain one deployment unit; do not replace their routing contract.
 
 Run `npm run skills:validate`, `npm test`, and `npm run typecheck` for changes.

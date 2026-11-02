@@ -1,0 +1,5 @@
+interface:
+  display_name: "Set up personal skills"
+  short_description: "Configure brain, attribution, hosts, and project workflows"
+policy:
+  allow_implicit_invocation: false
